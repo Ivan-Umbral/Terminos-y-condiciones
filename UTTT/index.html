@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Zozor - Travel.diaries</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="principal">
+				<img src="images/zozor_logo.png"
+				id="logo"/>
+				<h1>Zozor</h1>
+				<h2>Travel diaries</h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Resume</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="banner_imagen">
+			<div id="banner_description">
+				Reflections on my holoday in the United States...
+				<a href="#" class="red_botton">see article
+				<img src="images/small_arrow.png">
+				</a>
+			</div>
+			
+		</div>
+		<section>
+			<article>
+			<div id="article">
+
+				<form action="contacto.php" method="POST" id="formulario">
+					<h1>Contacto</h1>
+					<label>Nombre</label>
+					<input type="text" maxlength="50" placeholder="Ingresa Nombre" name="nombre"/><br>
+
+					<label>Direccion</label>
+					<input type="text" maxlength="50" placeholder="Ingresa Direccion" name="direccion"/><br>
+
+					<label>Telefono</label>
+					<input type="text" maxlength="50" placeholder="Ingresa Telefono" name="telefono"/><br>
+
+					<label>Email</label>
+					<input type="text" maxlength="50" placeholder="Ingresa correo electronico" name="email"/><br>
+                    
+        <script type="text/javascript">
+
+var checkobj
+
+function agreesubmit(el){
+
+checkobj=el
+
+if (document.all||document.getElementById){
+
+for (i=0;i<checkobj.form.length;i++){
+
+var tempobj=checkobj.form.elements[i]
+
+if(tempobj.type.toLowerCase()=="submit")
+
+tempobj.disabled=!checkobj.checked
+
+}
+
+}
+
+}
+
+function defaultagree(el){
+
+if (!document.all&&!document.getElementById){
+
+if (window.checkobj&&checkobj.checked)
+
+return true
+
+else{
+
+alert("Por favor, lea y acepta los términos ")
+
+return false
+
+}
+
+}
+
+}
+
+</script>
+
+<form onsubmit="return defaultagree(this)" name="agreeform" id="agreeform">
+
+<textarea>AQUI LOS TÉRMINOS Y CONDICIONES
+Esta página web es propiedad y está operado por estudiantes de la poderosisisima UTTT. Estos Términos establecen los términos y condiciones bajo los cuales tu puedes usar nuestra página web y servicios ofrecidos por nosotros. Esta página web ofrece a los visitantes registrarse al siguiente formulario. Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos.
+</textarea>
+<br>    
+
+<input type="checkbox" onclick="agreesubmit(this)" name="agreecheck">Acepto los <a href="terminos.html" target="_blank" class="enlace-terminos">politica de privacidad</a>
+
+ 
+
+<a href="login.html">
+<br>
+<input type="submit" disabled="disabled" value="Registrar"></a>
+
+</form>
+					<button type="button" onclick="window.location='index.html'">Limpiar</button>
+
+				</form>
+			</div>
+</article>
+		<aside>
+			<h1>
+				About the autor
+			</h1>
+			<img src="images/arrow.png" id="arrow">
+			<p id="zozor_picture">
+				<img src="images/zozor.png">
+			</p>
+			<p>
+				let me introduce myself:my name's Zozor.I was born on 23 november 2005
+			</p>
+			<p>
+				A bit meager, is it not? this is why I've now decided to write my biography to let my readers know who I really am.
+			</p>
+			<p>
+				<img src="images/facebook.png">
+				<img src="images/twitter.png">
+				<img src="images/vimeo.png">
+				<img src="images/flickr.png">
+				<img src="images/rss.png">
+			</p>
+		</aside>
+		</section>
+		<footer>
+			<div id="tweet">
+				<h1>my last tweet</h1>
+				<p>hee_haw!</p>
+				<p>12/05 23:12</p>
+			</div>
+			<div id="my_picture">
+				<h1>
+					my picture
+				</h1>
+				<p>
+					<img src="images/pic1.jpg"/>
+					<img src="images/pic2.jpg"/>
+					<img src="images/pic3.jpg"/>
+					<img src="images/pic4.jpg"/>
+				</p>
+  		    </div>
+  		    <div id="my_friends">
+  		    	<h1>my friends</h1>
+  		    	<ul>
+  		    		<li><a href="#">Pupi the rabit</a></li>
+  		    		<li><a href="#">Mr Baobab</a></li>
+  		    		<li><a href="#">Kaiwaii</a></li>
+  		    		<li><a href="#">Perseval.eu</a></li>
+  		    	</ul>
+  		    	<ul>
+  		    		<li><a href="#">Ji</a></li>
+  		    		<li><a href="#">Super cucuber</a></li>
+  		    		<li><a href="#">Prince</a></li>
+  		    		<li><a href="#">Mr fan</a></li>
+  		    	</ul>
+  		    </div>
+		</footer>
+	</div>
+
+</body>
+</html>
